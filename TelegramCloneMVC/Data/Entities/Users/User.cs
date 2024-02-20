@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using TelegramCloneMVC.Data.Enums;
 
 namespace TelegramCloneMVC.Data.Entities.Users
 {
@@ -15,5 +16,7 @@ namespace TelegramCloneMVC.Data.Entities.Users
         public string BIO {  get; set; } = string.Empty;
         [Column("user_name")]
         public string UserName {  get; set; } = string.Empty;
+        [Column("user_status")]
+        public UserStatus Status { get; set; } = UserStatus.Offline;
     }
 }
