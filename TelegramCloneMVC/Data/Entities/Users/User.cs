@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using TelegramCloneMVC.Data.Entities.Groups;
 using TelegramCloneMVC.Data.Enums;
 
 namespace TelegramCloneMVC.Data.Entities.Users
@@ -18,5 +19,9 @@ namespace TelegramCloneMVC.Data.Entities.Users
         public string UserName {  get; set; } = string.Empty;
         [Column("user_status")]
         public UserStatus Status { get; set; } = UserStatus.Offline;
+        [Column("user_images")]
+        public ICollection<UserImages> Images { get; set; } = new List<UserImages>();
+        [Column("group_users")]
+        public ICollection<GroupUsers> GroupUsers { get; set; } = new List<GroupUsers>();
     }
 }

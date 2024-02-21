@@ -16,5 +16,7 @@ namespace TelegramCloneMVC.Data.Entities.Groups
         public GroupStatus Status { get; set; }
         [Column("link")]
         public string Link { get; set; } = string.Empty;
+        [Column("group_users")]
+        public ICollection<GroupUsers> GroupUsers { get; set; } = new List<GroupUsers>();
     }
 }
