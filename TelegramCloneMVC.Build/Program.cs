@@ -7,7 +7,7 @@ var aDotNetClient = new ADotNetClient();
 
 var githubPipeline = new GithubPipeline
 {
-    Name = "GitHub",
+    Name = "GitHub Action",
 
     OnEvents = new Events
     {
