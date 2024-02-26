@@ -5,7 +5,7 @@ namespace TelegramCloneMVC.BLL.Interfaces.Users
 {
     public interface IUserService
     {
-        ValueTask<AddUserDto> AddAsync(AddUserDto user);
-        ValueTask<IEnumerable<User>> GetAll();
+        ValueTask<int> AddAsync(AddUserDto user);
+        IEnumerable<User> GetAll();
     }
 }
