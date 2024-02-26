@@ -1,8 +1,7 @@
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using TelegramCloneMVC.BLL.Common.Mapper;
 using TelegramCloneMVC.Data.AppDb;
-using Mapp = TelegramCloneMVC.BLL.Common.Mapper;
+using Mapp = TelegramCloneMVC.Common.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
