@@ -1,7 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using TelegramCloneMVC.Data.AppDb;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<AppDBContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LocalDB")));
 
 var app = builder.Build();
 
