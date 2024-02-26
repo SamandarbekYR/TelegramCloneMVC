@@ -20,5 +20,10 @@ namespace TelegramCloneMVC.Controllers
         {
             return View(); 
         }
+        public IActionResult Register()
+        {
+            return View();
+        }
+
     }
 }
