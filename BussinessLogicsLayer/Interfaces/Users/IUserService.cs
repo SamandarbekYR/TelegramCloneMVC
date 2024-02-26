@@ -1,11 +1,8 @@
-﻿using TelegramCloneMVC.BLL.DTOs.Users;
-using TelegramCloneMVC.Data.Entities.Users;
+﻿using TelegramCloneMVC.DTOs.Users;
+using TelegramCloneMVC.Entities;
 
-namespace TelegramCloneMVC.BLL.Interfaces.Users
+public interface IUserService
 {
-    public interface IUserService
-    {
-        ValueTask<int> AddAsync(AddUserDto user);
-        IEnumerable<User> GetAll();
-    }
+    ValueTask<int> AddAsync(AddUserDto user);
+    IEnumerable<User> GetAll();
 }

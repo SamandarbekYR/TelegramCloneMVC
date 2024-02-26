@@ -1,14 +1,15 @@
 ﻿
 
 using AutoMapper;
+using TelegramCloneMVC.DTOs.Users;
+using TelegramCloneMVC.Entities;
 
-namespace TelegramCloneMVC.BLL.Common.Mapper
+namespace TelegramCloneMVC.Common.Mapper;
+
+public class AutoMapper : Profile
 {
-    public class AutoMapper : Profile
+    public AutoMapper()
     {
-        public AutoMapper()
-        {
-            CreateMap<AddUserDto, User>().ReverseMap();
-        }
+        CreateMap<AddUserDto, User>().ReverseMap();
     }
 }
