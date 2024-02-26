@@ -1,6 +1,6 @@
-﻿using AutoMapper;
-using TelegramCloneMVC.BLL.DTOs.Users;
-using TelegramCloneMVC.Data.Entities.Users;
+﻿
+
+using AutoMapper;
 
 namespace TelegramCloneMVC.BLL.Common.Mapper
 {
