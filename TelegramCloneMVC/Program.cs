@@ -1,5 +1,8 @@
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using TelegramCloneMVC.BLL.Common.Mapper;
 using TelegramCloneMVC.Data.AppDb;
+using Mapp = TelegramCloneMVC.BLL.Common.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("LocalDB")));
+
+var mapConfig = new MapperConfiguration(cfg =>
+{
+    cfg.AddProfile(new Mapp.AutoMapper());
+});
+
 
 var app = builder.Build();
 
