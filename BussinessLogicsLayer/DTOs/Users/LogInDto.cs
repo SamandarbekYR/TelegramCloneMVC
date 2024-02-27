@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BusinessLogicsLayer.DTOs.Users;
 
-namespace BusinessLogicsLayer.DTOs.Users
+public class LogInDto
 {
-    public class LogInDto
-    {
-        public string PhoneNumber { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-    }
+    public string PhoneNumber { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
 }

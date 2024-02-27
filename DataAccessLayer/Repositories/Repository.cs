@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using TelegramCloneMVC.AppDb;
-using TelegramCloneMVC.Entities;
-using TelegramCloneMVC.Interfaces;
+﻿using DataAccessLayer.AppDb;
+using DataAccessLayer.Entities;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
-namespace TelegramCloneMVC.Repositories;
+namespace DataAccessLayer.Repositories;
 
 public class Repository<TEntity>(AppDBContext appDb) : IRepository<TEntity>
        where TEntity : BaseEntity

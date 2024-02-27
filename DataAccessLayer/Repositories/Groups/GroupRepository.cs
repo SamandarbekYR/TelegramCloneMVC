@@ -1,8 +1,8 @@
-﻿using TelegramCloneMVC.AppDb;
-using TelegramCloneMVC.Entities;
-using TelegramCloneMVC.Interfaces.Groups;
+﻿using DataAccessLayer.AppDb;
+using DataAccessLayer.Entities;
+using DataAccessLayer.Interfaces.Groups;
 
-namespace TelegramCloneMVC.Repositories.Groups;
+namespace DataAccessLayer.Repositories.Groups;
 
 public class GroupRepository(AppDBContext appDB) 
              : Repository<Group>(appDB) , IGroup

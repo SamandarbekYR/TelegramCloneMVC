@@ -1,6 +1,6 @@
-﻿using TelegramCloneMVC.Entities;
+﻿using DataAccessLayer.Entities;
 
-namespace TelegramCloneMVC.Interfaces.Users
+namespace DataAccessLayer.Interfaces.Users
 {
     public interface IUserImages : IRepository<UserImages>
     { }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TelegramCloneMVC.Entities;
+namespace DataAccessLayer.Entities;
 
 [Table("user_images")]
 public class UserImages : BaseEntity

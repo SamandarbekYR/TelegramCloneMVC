@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace TelegramCloneMVC.DTOs.Users;
+namespace BusinessLogicsLayer.DTOs.Users;
 
 public class AddUserDto
 {
@@ -10,5 +10,5 @@ public class AddUserDto
     public string BIO { get; set; } = string.Empty;
     public string UserName { get; set; } = string.Empty;
     public string Status { get; set; } = string.Empty;
-    public IFormFile Files { get; set; } 
+    public IFormFile Files { get; set; }
 }

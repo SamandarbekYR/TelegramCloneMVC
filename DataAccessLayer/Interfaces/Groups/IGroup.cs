@@ -1,7 +1,6 @@
-﻿using TelegramCloneMVC.Entities;
+﻿using DataAccessLayer.Entities;
 
-namespace TelegramCloneMVC.Interfaces.Groups
-{
-    public interface IGroup : IRepository<Group>
-    { }
-}
+namespace DataAccessLayer.Interfaces.Groups;
+
+public interface IGroup : IRepository<Group>
+{ }

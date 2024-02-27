@@ -1,11 +1,11 @@
-﻿using TelegramCloneMVC.AppDb;
-using TelegramCloneMVC.Interfaces;
-using TelegramCloneMVC.Interfaces.Groups;
-using TelegramCloneMVC.Interfaces.Users;
-using TelegramCloneMVC.Repositories.Groups;
-using TelegramCloneMVC.Repositories.Users;
+﻿using DataAccessLayer.AppDb;
+using DataAccessLayer.Interfaces;
+using DataAccessLayer.Interfaces.Groups;
+using DataAccessLayer.Interfaces.Users;
+using DataAccessLayer.Repositories.Groups;
+using DataAccessLayer.Repositories.Users;
 
-namespace TelegramCloneMVC.Repositories;
+namespace DataAccessLayer.Repositories;
 
 public class UnitOfWork(AppDBContext appDB) : IUnitOfWork
 {

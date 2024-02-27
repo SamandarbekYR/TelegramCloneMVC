@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using TelegramCloneMVC.Entities;
 
-namespace TelegramCloneMVC.Entities;
+namespace DataAccessLayer.Entities;
 
 [Table("group")]
 public class Group: Auditable
