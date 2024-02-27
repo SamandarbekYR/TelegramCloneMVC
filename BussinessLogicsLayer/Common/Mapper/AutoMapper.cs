@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BusinessLogicsLayer.DTOs.Users;
 using DataAccessLayer.Entities;
 
 namespace BusinessLogicsLayer.Common.Mapper;
