@@ -1,9 +1,8 @@
-﻿using TelegramCloneMVC.AppDb;
-using TelegramCloneMVC.Entities;
-using TelegramCloneMVC.Interfaces.Users;
-using TelegramCloneMVC.Repositories;
+﻿using DataAccessLayer.AppDb;
+using DataAccessLayer.Entities;
+using DataAccessLayer.Interfaces.Users;
 
-namespace TelegramCloneMVC.Repositories.Users;
+namespace DataAccessLayer.Repositories.Users;
 
 public class UserImagesRepository(AppDBContext appDB)
              : Repository<UserImages>(appDB), IUserImages

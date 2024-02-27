@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TelegramCloneMVC.DTOs.Users;
+﻿using BusinessLogicsLayer.DTOs.Users;
 
 namespace BusinessLogicsLayer.Interfaces.Auth
 {

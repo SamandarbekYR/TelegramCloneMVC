@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TelegramCloneMVC.Entities;
+namespace DataAccessLayer.Entities;
 
 [Table("users")]
 public class User: Auditable

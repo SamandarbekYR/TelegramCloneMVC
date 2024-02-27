@@ -1,4 +1,4 @@
-﻿namespace TelegramCloneMVC.Entities;
+﻿namespace DataAccessLayer.Entities;
 
 public enum GroupStatus
 {

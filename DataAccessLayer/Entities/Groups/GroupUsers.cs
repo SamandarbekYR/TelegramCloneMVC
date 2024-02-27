@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace TelegramCloneMVC.Entities;
+namespace DataAccessLayer.Entities;
 
 [Table("group_users")]
 public class GroupUsers : BaseEntity

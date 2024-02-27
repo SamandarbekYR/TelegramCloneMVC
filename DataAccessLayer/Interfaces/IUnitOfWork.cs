@@ -1,13 +1,12 @@
-﻿using TelegramCloneMVC.Interfaces.Groups;
-using TelegramCloneMVC.Interfaces.Users;
+﻿using DataAccessLayer.Interfaces.Groups;
+using DataAccessLayer.Interfaces.Users;
 
-namespace TelegramCloneMVC.Interfaces
+namespace DataAccessLayer.Interfaces;
+
+public interface IUnitOfWork
 {
-    public interface IUnitOfWork
-    {
-        public IUser Users { get; }
-        public IUserImages Images { get; }
-        public IGroup Groups { get; }
-        public IGroupUsers GroupUsers { get;}
-    }
+    public IUser Users { get; }
+    public IUserImages Images { get; }
+    public IGroup Groups { get; }
+    public IGroupUsers GroupUsers { get;}
 }

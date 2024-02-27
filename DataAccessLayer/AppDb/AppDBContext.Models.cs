@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-namespace TelegramCloneMVC.Data.AppDb
+namespace DataAccessLayer.AppDb;
+
+public partial class AppDBContext 
 {
-    public partial class AppDBContext 
-    {
-    }
 }

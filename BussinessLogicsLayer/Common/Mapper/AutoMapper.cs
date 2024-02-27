@@ -1,10 +1,7 @@
-﻿
+﻿using AutoMapper;
+using DataAccessLayer.Entities;
 
-using AutoMapper;
-using TelegramCloneMVC.DTOs.Users;
-using TelegramCloneMVC.Entities;
-
-namespace TelegramCloneMVC.Common.Mapper;
+namespace BusinessLogicsLayer.Common.Mapper;
 
 public class AutoMapper : Profile
 {
