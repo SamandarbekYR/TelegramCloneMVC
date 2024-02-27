@@ -13,12 +13,12 @@ var githubPipeline = new GithubPipeline
     {
         Push = new PushEvent
         {
-            Branches = new string[] { "devops" }
+            Branches = new string[] { "main" }
         },
 
         PullRequest = new PullRequestEvent
         {
-            Branches = new string[] { "devops" }
+            Branches = new string[] { "main" }
         }
     },
 
