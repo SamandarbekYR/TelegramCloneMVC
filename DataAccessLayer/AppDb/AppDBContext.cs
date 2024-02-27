@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using TelegramCloneMVC.Entities;
+﻿using DataAccessLayer.Entities;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace DataAccessLayer.AppDb;
 
